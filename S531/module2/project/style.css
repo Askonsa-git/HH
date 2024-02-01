@@ -19,7 +19,7 @@ img {
 }
 
 p {
-  text-align: left;
+  float: left;
   font-family: fantasy;
   font-size: 18px;
   padding-left:100px;
