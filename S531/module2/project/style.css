@@ -11,8 +11,8 @@ font-family: sans-serif;
 
 img {
   /* float:right; */
-  /* width: 600px; */
-  /* height: 600px; */
+   width: 600px; 
+  height: 600px; 
  
   float: right;
   
@@ -45,8 +45,7 @@ p {
 }
 
 .image-container img {
-  width: auto;
-  height: auto;
+ 
   border-color: #3db68b;
   /* Makes the image responsive */
   image-orientation: inherit;
