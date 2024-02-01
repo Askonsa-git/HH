@@ -10,9 +10,7 @@ h3 {
 
 
 p {
-  float: left;
   font-family: fantasy;
-  font-size: 18px;
   padding-left: 30px;
   background-color: azure
 }
@@ -21,20 +19,26 @@ p {
   background-color: rgba(234, 89, 198, 0.471);
 }
 
-.image-container img {
+.image-container {
   float: right;
-  width: max-content;
-  height: max-content;
+  width: 400px;
+  height: 300px;
+  padding: 40px;
+}
+
+.image-container img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  float: right;
+}
+
+.image-container:hover img {
+  transform: scale(2.1);
 }
 
 .content-container {
-
-
-  float: left;
-
   background: rgb(171, 212, 199);
-
   padding: 20px;
-
 }
-
