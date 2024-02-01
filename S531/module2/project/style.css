@@ -1,0 +1,34 @@
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration-color: blue;
+}
+
+h3{
+font-family: sans-serif;
+}
+
+img {
+  float:right;
+  width: 600px;
+  height: 600px;
+  border-color: #3db68b;
+  margin-top: 130px;
+  margin-right: 120px;
+  border-style: double;
+  border-radius: 29px;
+}
+
+p {
+  text-align: left;
+  font-family: fantasy;
+  font-size: 18px;
+  padding-left:100px;
+  width: 620px;
+  background-color: azure
+}
+.dream {
+  background-color: rgba(234, 89, 198, 0.471);
+}
