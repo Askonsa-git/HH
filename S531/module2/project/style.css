@@ -47,7 +47,7 @@ p {
 .image-container img {
   border-color: #3db68b;
   /* Makes the image responsive */
-  height: auto; /* Maintains the aspect ratio of the image */
+  
   float: right;
 }
 
