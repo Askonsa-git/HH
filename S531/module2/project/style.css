@@ -44,7 +44,9 @@ p {
 }
 
 .image-container img {
-  order: 2;
   width: 100%; /* Makes the image responsive */
   height: auto; /* Maintains the aspect ratio of the image */
+}
+.image-container {
+  order: 2;
 }
