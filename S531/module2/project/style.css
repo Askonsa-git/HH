@@ -10,8 +10,8 @@ font-family: sans-serif;
 }
 
 img {
-  /* float:right; */
-   width: 600px; 
+
+  width: 600px; 
   height: 600px; 
  
   float: right;
@@ -41,15 +41,11 @@ p {
 
 .image-container,
 .content-container {
-  flex: 1; /* This allows each container to take up equal space */
+  flex: 1;
 }
 
 .image-container img {
- 
   border-color: #3db68b;
-  /* Makes the image responsive */
   image-orientation: inherit;
-  
-  float: right;
-}
+  }
 
