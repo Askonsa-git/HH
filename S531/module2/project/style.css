@@ -32,3 +32,18 @@ p {
 .dream {
   background-color: rgba(234, 89, 198, 0.471);
 }
+.main-container {
+  display: flex; /* This enables Flexbox */
+  align-items: start; /* Aligns items to the start of the container */
+  gap: 20px; /* Optional: Adds space between the image and content */
+}
+
+.image-container,
+.content-container {
+  flex: 1; /* This allows each container to take up equal space */
+}
+
+.image-container img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
