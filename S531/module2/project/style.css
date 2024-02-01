@@ -11,10 +11,6 @@ font-family: sans-serif;
 
 img {
 
-  width: 600px; 
-  height: 600px; 
- 
-  float: right;
   
   /* margin-top: 130px; */
   /* margin-right: 120px; */
@@ -47,5 +43,9 @@ p {
 .image-container img {
   border-color: #3db68b;
   image-orientation: inherit;
+  width: 600px; 
+  height: 600px; 
+  float: right;
+  margin-top: 10%;
   }
 
