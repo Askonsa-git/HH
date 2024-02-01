@@ -13,7 +13,7 @@ img {
   /* float:right; */
   /* width: 600px; */
   /* height: 600px; */
-  size: inherit;
+ 
   float: right;
   
   /* margin-top: 130px; */
@@ -45,9 +45,11 @@ p {
 }
 
 .image-container img {
+  width: 70%;
   border-color: #3db68b;
   /* Makes the image responsive */
   image-orientation: inherit;
+  
   float: right;
 }
 
