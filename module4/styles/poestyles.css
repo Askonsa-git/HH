@@ -28,7 +28,7 @@ h2 {
     border-width: 3px;
 
 }
-
+/* Setting table view */
 table#pp {
     border-color: pink;
     border-width: 5px;
@@ -51,7 +51,7 @@ img {
     float: right;
     border-radius: 50%;
 }
-
+/* HTML elements */
 aside {
     grid-area: right;
 }
