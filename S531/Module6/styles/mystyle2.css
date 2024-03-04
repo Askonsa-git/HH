@@ -1,0 +1,133 @@
+footer,
+header,
+nav {
+    display: block;
+}
+
+
+body {
+
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
+
+    background-image: url("../images/ball.jpg");
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
+
+    background-size: cover;
+    /* Scale the image to cover the size of the container */
+
+    background-attachment: fixed;
+    /* Fix the background image when scrolling */
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    color: rgb(25, 135, 203);
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #0f3c69;
+
+}
+
+nav {
+    grid-area: nav;
+    size: auto;
+
+
+}
+
+main {
+    grid-area: main;
+    font-size: 22px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+
+        'nav nav header header header header'
+        'nav nav main main main main'
+        'nav nav main main main main'
+        'nav nav main main main main'
+        'nav nav main main main main'
+        'nav nav main main main main'
+        'footer footer footer footer footer footer'
+        'footer footer footer footer footer footer';
+    grid-gap: .5em;
+    margin: auto;
+}
+
+@media screen and (max-width: 60em) {
+    header {
+        text-shadow: 2px 2px 4px #eaeef2;
+        font-size: 22px;
+
+    }
+}
+
+@media screen and (max-width: 60em) {
+    main {
+        color: rgb(18, 18, 121);
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    img {
+        max-width: 50%;
+        min-width: 150px;
+    }
+}
+
+
+.image-container {
+    overflow: hidden;
+    padding-left: 90px;
+    padding-top: 50px;
+}
+
+.image-container img {
+    max-width: 80%;
+    min-width: 250px;
+    float: left;
+    margin-right: .5em;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+    /* Увеличиваем размер при наведении (на 20%) */
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+    /* Increase the size on hover (by 20%) */
+}
+
+button {
+    align-items: center;
+    padding: 10px 20px;
+    /* Set internal padding of the button (10px vertically, 20px horizontally) */
+    font-size: 16px;
+    /* Set font size */
+    background-color: #c8d9e4;
+    /* Set button background color */
+    color: #655f5f;
+    /* Set button text color */
+    border: none;
+    /* Remove button border */
+    border-radius: 5px;
+    /* Round the corners of the button */
+    cursor: pointer;
+    /* Set cursor style on button hover */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition for the background color */
+}
+
+button:hover {
+    background-color: #2980b9;
+    color: azure;
+    /* Set background color on button hover */
+}
