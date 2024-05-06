@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body id="top">
+    <header class="top-nav">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-area">
+        <section class="content-section" id="home">
+            <div style="height: calc(100vh - 40px)">
+                <div class="container-w">
+
+                    <div class="welcome-area-gradient-overlay">
+                        <h1>Welcome</h1>
+
+                        <span class="museo-sans-500 gradient-text" style="
+                                    background-image: linear-gradient(
+                                        to left,
+                                        rgb(184, 150, 255) 20%,
+                                        rgb(0, 246, 255) 90%,
+                                        rgb(0, 255, 240) 100%
+                                    );
+                                ">We are the ones who will make your incredible dream come true!
+                        </span>
+                    </div>
+                    <footer class="site-footer">
+
+                        <div class="button-in-row">
+                            <div class="row">
+
+                                <button onclick="window.location.href='#about'" class="button-ui" value="Submit">
+                                    About us
+                                </button>
+
+                                <br>
+                                <button class="button-ui" value="Submit">
+                                    Future
+                                </button>
+
+                                <br>
+                                <button class="button-ui" value="Submit">
+                                    News
+                                </button>
+
+                                <br>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+        </section>
+        <section class="content-section" id="about">
+            <div style="height: calc(100vh - 40px)">
+                <div class="about-area-gradient-overlay">
+                    <h1>About Us</h1>
+                    <div>
+                        <span class="museo-sans-500 gradient-text" style="
+                                    background-image: linear-gradient(
+                                        to left,
+                                        rgb(184, 150, 255) 20%,
+                                        rgb(0, 246, 255) 90%,
+                                        rgb(0, 255, 240) 100%
+                                    );
+                                ">Information about our company
+                        </span>
+                        <h2>
+                            <p>On May 20, 2003, humanity witnessed a historical event - the first flight of the reusable
+                                spacecraft <a href="https://shorturl.at/bxGY7">SpaceShipOne</a>
+                                SpaceShipOne, which foreshadowed the era of private space tourism.
+                                The flight lasted 90 minutes.</p>
+                            <p><a href="https://shorturl.at/bxGY7">SpaceShipOne</a> rose to an altitude of more than
+                                100
+                                kilometers,
+                                reaching the edge of space known as the Pocket of Pocket. During the flight, the ship
+                                experienced weightlessness, and the pilot was able to enjoy breathtaking views of the
+                                Earth
+                                from space.
+                            <p> It was the beginning of space tourism.</p>
+                            <p>Our company was founded in 2017. Since then, more than a thousand people have realized
+                                their
+                                dream - to see our planet from space. These emotions cannot be compared with
+                                anything.</p>
+                            <p>The company's main office is located in California. Our company employs the most trusted
+                                and professional specialists.</p>
+                        </h2>
+                        <a href="#services">Learn more ---></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="content-section" id="services">
+            <div style="height: calc(100vh - 40px)">
+                <div class="services-area-gradient-overlay">
+                    <h1>Our Services</h1>
+                    <h2>
+                        Details of the services we offer.
+                    </h2>
+
+                    <div class="row">
+                        <div class="card">
+                            <a href="ship.html">
+                                <img src="./media/ship1.png" alt="ship" style="width: 100%" />
+                                <div class="container">
+                                    <h3><b>Our spaceship</b></h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="petsonal.html">
+                                <img src="./media/personal.jpeg" alt="personal our space ship" style="width: 100%" />
+                                <div class="container">
+                                    <h3><b>Our team</b></h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <img src="./media/2.jpg" alt="flight" style="width: 100%" />
+                            <div class="container">
+                                <h3><b>About flight </b></h3>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./media/wind2.webp" alt="Avatar" style="width: 100%" />
+                            <div class="container">
+                                <h3><b>Galereyon</b></h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separator"></div>
+        <section class="content-section" id="contact">
+            <div class="contact-area-gradient-overlay">
+                <h1>Contact Us</h1>
+                <div style="padding-left: 10vh">
+                    <span class="museo-sans-500 gradient-text" style="
+                                background-image: linear-gradient(
+                                    to left,
+                                    rgb(184, 150, 255) 20%,
+                                    rgb(0, 246, 255) 90%,
+                                    rgb(0, 255, 240) 100%
+                                );
+                            ">
+                        Ask Us Anything
+                    </span>
+                </div>
+                <form action="submit.php" method="post" class="contact-us-container form-ui">
+                    <div class="form-group full-width input-group">
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                        <label for="subject">Your question</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group input-group">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="form-group input-group">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-group full-width input-group">
+                        <input class="full-width" type="email" id="email" name="email" placeholder="Your email.." />
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group full-width input-group">
+                        <select id="country" name="country">
+                            <option value="" disabled selected>
+                                Select your country
+                            </option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="finland">Finland</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="norway">Norway</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="iceland">Iceland</option>
+                            <option value="greenland">Greenland</option>
+                            <option value="new-zealand">New Zealand</option>
+                            <option value="uk">UK</option>
+                            <option value="ireland">Ireland</option>
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                            <option value="spain">Spain</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="italy">Italy</option>
+                            <option value="greece">Greece</option>
+                            <option value="turkey">Turkey</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="morocco">Morocco</option>
+                            <option value="south-africa">
+                                South Africa
+                            </option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="ethiopia">Ethiopia</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="tanzania">Tanzania</option>
+                            <option value="zambia">Zambia</option>
+                            <option value="zimbabwe">Zimbabwe</option>
+                        </select>
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="form-group full-width">
+                        <button class="button-ui" type="submit" value="Submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="section-separator"></div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to top</a>
+            <div class="footer-social-media">
+                <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright-text">
+                © 2024 Simple Website. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

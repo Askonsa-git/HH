@@ -1,0 +1,136 @@
+header,
+footer,
+main {
+    display: block;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 46px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(236, 212, 212);
+    font-size: flex;
+}
+
+.museo-sans-500 {
+    font-family: "museo-sans", "source-han-sans-simplified-c", "Source Sans Pro",
+        "noto-sans-cjk-jp", arial, helvetica, sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    padding-left: 3%;
+
+}
+
+.gradient-text {
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    box-decoration-break: clone;
+}
+
+
+.about-area-gradient-overlay {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0) 50%),
+        url("./media/persfont.jpg") no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    /* Ensures text is white for visibility on dark background */
+    padding-left: 3%;
+}
+
+body {
+
+    background-color: #080808;
+    /* Prevent background image from repeating */
+
+    background-size: cover;
+    /* Scale the image to cover the size of the container */
+
+    background-attachment: fixed;
+    /* Fix the background image when scrolling */
+}
+
+main {
+    grid-area: main;
+    font-size: 22px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+
+        'header header header header'
+        'main main main main'
+        'main main main main'
+        'main main main main'
+        'main main main main'
+        'main main main main'
+        'main main main main';
+    grid-gap: .5em;
+    margin: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+footer {
+    display: block;
+    padding-top: 10%;
+}
+
+
+
+.image-link {
+    float: left;
+    /* Размещаем картинки в горизонтальном ряду */
+    margin-right: 20px;
+    /* Добавляем отступ между картинками */
+    border: 2px solid #9ce2ee;
+    /* Добавляем белую рамку толщиной 2 пикселя */
+    border-radius: 10px;
+    /* Закругляем уголки рамки */
+}
+
+.image-link img {
+    width: 150px;
+    /* Абсолютная ширина изображения */
+    height: 90px;
+    /* Абсолютная высота изображения */
+    display: inline-block;
+    /* Чтобы избежать пробела под изображением */
+}
+
+.image-link:hover img {
+    transform: scale(3);
+    /* Увеличиваем картинку в два раза при наведении */
+}
+
+
+.caption {
+    display: block;
+    /* Чтобы текст находился под изображением */
+    text-align: center;
+    /* Выравниваем текст по центру */
+    margin-top: 5px;
+    /* Добавляем отступ сверху */
+    color: #ffffff;
+    /* Цвет текста */
+}
+
+.text-info {
+    max-width: 90%;
+    padding-top: 5%;
+    text-align: center;
+}

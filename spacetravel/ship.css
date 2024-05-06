@@ -1,0 +1,275 @@
+footer,
+header,
+nav {
+    display: block;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 46px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.museo-sans-500 {
+    font-family: "museo-sans", "source-han-sans-simplified-c", "Source Sans Pro",
+        "noto-sans-cjk-jp", arial, helvetica, sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    padding-left: 3%;
+}
+
+.gradient-text {
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    box-decoration-break: clone;
+}
+
+.content-section {
+    /* height: calc(100vh - 100px); */
+    overflow: hidden;
+}
+
+.about-area-gradient-overlay {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0) 50%),
+        url("./media/persfont.jpg") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    /* Ensures text is white for visibility on dark background */
+    padding-left: 3%;
+}
+
+body {
+
+
+    background-color: #f4e7e7;
+    /* Prevent background image from repeating */
+
+    background-size: cover;
+    /* Scale the image to cover the size of the container */
+
+    background-attachment: fixed;
+    /* Fix the background image when scrolling */
+}
+
+/* header {
+    grid-area: header;
+    text-align: center;
+    color: rgb(25, 135, 203);
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px #0f3c69;
+} */
+
+nav {
+    grid-area: nav;
+    size: auto;
+}
+
+main {
+    grid-area: main;
+    font-size: 22px;
+
+}
+
+footer {
+    grid-area: footer;
+    padding-left: 5%;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+
+        'header header header header'
+        'main main main main'
+        'main main main main'
+        'main main main main'
+        'main main main main'
+        'main main main main'
+        'footer footer footer footer '
+        'footer footer footer footer ';
+    grid-gap: .5em;
+    margin: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    /* Равномерное распределение между кнопками */
+
+}
+
+.image-link {
+    text-decoration: none;
+    /* Убираем стандартное подчеркивание ссылки */
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #ccc;
+    /* Толщина и цвет рамки */
+    border-radius: 10px;
+    /* Закругляем углы рамки */
+    padding: 10px;
+
+    transition: transform 0.3s ease-in-out;
+    /* Плавное изменение при наведении */
+}
+
+.image-link:hover {
+    transform: translateY(-5px);
+    /* Поднимаем немного при наведении */
+}
+
+.image-link img {
+    width: 400px;
+    /* Ширина изображения */
+    height: auto;
+    /* Автоматическая высота */
+    border-radius: 8px;
+    /* Закругляем углы изображения */
+}
+
+.caption {
+    margin-top: 10px;
+    /* Отступ сверху для подписи */
+    font-weight: bold;
+    /* Жирный шрифт для подписи */
+}
+
+@media screen and (max-width: 55em) {
+
+    h1 {
+        font-size: 54px;
+    }
+
+    .gradient-text {
+        text-shadow: 2px 2px 4px #eaeef2;
+        font-size: 28px;
+    }
+
+    img {
+        max-width: 100%;
+        min-width: 100%;
+
+    }
+
+    .image-link {
+        float: left;
+        /* Размещаем картинки в горизонтальном ряду */
+        margin-right: 1%;
+        /* Добавляем отступ между картинками */
+        border: 2px solid #ee9c9c;
+        /* Добавляем белую рамку толщиной 2 пикселя */
+
+    }
+
+    .image-link img {
+        width: auto;
+        /* Изменяем ширину изображения на 100% */
+        height: auto;
+        /* Автоматически подстраиваем высоту под ширину */
+    }
+
+    .caption {
+        font-size: 14px;
+        /* Уменьшаем размер текста */
+        color: rgb(244, 210, 131);
+        /* Изменяем цвет текста на красный */
+    }
+}
+
+@media screen and (max-width: 50em) {
+    h1 {
+        font-size: 44px;
+    }
+
+    .gradient-text {
+        text-shadow: 2px 2px 4px #eaeef2;
+        font-size: 22px;
+    }
+
+    img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .image-link {
+        float: left;
+        /* Размещаем картинки в горизонтальном ряду */
+        margin-right: 1%;
+        /* Добавляем отступ между картинками */
+        border: 2px solid #b1e7f4;
+        /* Добавляем белую рамку толщиной 2 пикселя */
+
+    }
+
+    .image-link img {
+        width: auto;
+        /* Изменяем ширину изображения на 100% */
+        height: auto;
+        /* Автоматически подстраиваем высоту под ширину */
+    }
+
+    .caption {
+        font-size: 14px;
+        /* Уменьшаем размер текста */
+        color: rgb(196, 233, 212);
+        /* Изменяем цвет текста на красный */
+    }
+}
+
+@media screen and (max-width: 40em) {
+    h1 {
+        font-size: 34px;
+    }
+
+    .gradient-text {
+        text-shadow: 2px 2px 4px #eaeef2;
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .image-link {
+        float: left;
+        /* Размещаем картинки в горизонтальном ряду */
+        margin-right: 1%;
+        /* Добавляем отступ между картинками */
+        border: 2px solid #ee9c9c;
+        /* Добавляем белую рамку толщиной 2 пикселя */
+
+    }
+
+    .image-link img {
+        width: auto;
+        /* Изменяем ширину изображения на 100% */
+        height: auto;
+        /* Автоматически подстраиваем высоту под ширину */
+    }
+
+    .caption {
+        font-size: 14px;
+        /* Уменьшаем размер текста */
+        color: rgb(212, 255, 0);
+        /* Изменяем цвет текста на красный */
+    }
+}

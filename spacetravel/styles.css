@@ -1,0 +1,529 @@
+body {
+    font-family: "Forum", serif;
+    margin: 0;
+    background-color: black;
+}
+
+h2 {
+    padding-right: 15%;
+    padding-left: 2%;
+    line-height: 1.5;
+    text-indent: 1.2%;
+}
+
+h3 {
+    color: #630cba;
+    text-align: center;
+
+}
+
+a {
+    color: rgb(194, 247, 209);
+    /* Устанавливаем синий цвет для ссылок */
+    text-decoration: none;
+}
+
+
+
+.top-nav {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    /* Stick to the top */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* Задаем высоту контейнера на весь экран */
+}
+
+.container-w {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Задаем высоту контейнера на весь экран */
+}
+
+
+.content-area {
+    background-color: black;
+    min-height: 100vh;
+    /* ensures it takes at least the height of the viewport */
+    overflow-y: auto;
+    /* makes it scrollable */
+    /* margin-left: 10px; */
+}
+
+.section-separator {
+    border: none;
+    border-top: 1px solid white;
+    /* creates the white line */
+    margin: 20px;
+}
+
+.content-section {
+    /* height: calc(100vh - 100px); */
+    overflow: hidden;
+}
+
+.content-section h1 {
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.content-section p {
+    line-height: 1.5;
+}
+
+.gradient-text {
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    box-decoration-break: clone;
+}
+
+.museo-sans-500 {
+    font-family: "museo-sans", "source-han-sans-simplified-c", "Source Sans Pro",
+        "noto-sans-cjk-jp", arial, helvetica, sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    padding-left: 3%;
+
+}
+
+.welcome-area-gradient-overlay {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0) 50%),
+        url("./media/3.jpg") no-repeat center center / cover;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    /* Ensures text is white for visibility on dark background */
+    padding-left: 3%;
+}
+
+.about-area-gradient-overlay {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0) 50%),
+        url("./media/about.webp") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    /* Ensures text is white for visibility on dark background */
+    padding-left: 3%;
+}
+
+.services-area-gradient-overlay {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0) 50%),
+        url("./media/services.webp") no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    /* Ensures text is white for visibility on dark background */
+    padding-left: 3%;
+}
+
+/* Style the row to display as a flex container, which wraps items */
+.row {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding: 0 50px;
+    gap: 20px;
+    /* spacing between columns */
+}
+
+/* Flex items (columns) */
+.column {
+    flex: 1;
+    /* grow, don’t shrink, and basis at 21% */
+    padding: 0 10px;
+    /* padding on sides, adjust as needed */
+    box-sizing: border-box;
+    /* include padding in width calculation */
+}
+
+/* Style the counter cards */
+.card {
+    flex: 1 0 21%;
+    /* grow, don’t shrink, and basis at 21% */
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+    /* add bottom margin for spacing between rows */
+}
+
+/************** CONTACT US **************/
+
+.contact-area-gradient-overlay {
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.25) 40%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    /* Ensures text is white for visibility on dark background */
+}
+
+.form-ui {
+    font-family: "museo-sans", "source-han-sans-simplified-c", "Source Sans Pro",
+        "noto-sans-cjk-jp", arial, helvetica, sans-serif;
+    color: #fff;
+}
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    gap: 20px;
+    width: 100%;
+    /* Adjusted for full width */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-row {
+    display: flex;
+    width: 60%;
+    /* Adjusted to match textarea width */
+    justify-content: space-between;
+}
+
+.form-row .form-group {
+    width: 48%;
+    /* Slightly less than half to fit side-by-side */
+}
+
+.full-width {
+    width: 60%;
+    /* Adjusted to match textarea width */
+}
+
+.contact-area-gradient-overlay textarea,
+textarea {
+    height: 20vh;
+}
+
+.contact-area-gradient-overlay textarea,
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    /* Adjusted for full width within their containers */
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    /* Full width of its container */
+    cursor: pointer;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+    /* Adjust space between input groups */
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    /* Adjust label spacing */
+    margin-top: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #76cdd8;
+    /* Use color to match button */
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+}
+
+.input-group input::placeholder,
+.input-group select {
+    color: #fff;
+}
+
+.input-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    background-position: right 0.5rem center;
+    background-size: 1.2rem;
+    padding-right: 2rem;
+    /* Ensure padding for the background image */
+}
+
+.input-group textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #76cdd8;
+    /* Match your inputs' underline color */
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    margin-top: 2rem;
+    /* Space above the textarea, adjust as needed */
+}
+
+.input-group textarea::placeholder {
+    color: #fff;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+/************** CONTACT US **************/
+
+/************** TEXT COLORS **************/
+
+/************** TEXT COLORS **************/
+
+/************** BUTTONS **************/
+
+.button-in-columns-23 .button-ui-23 .button__inner {
+    min-height: unset;
+    flex-grow: 1;
+    padding: 1.1rem 2.2rem;
+}
+
+.button-ui-23 {
+    align-items: center;
+    border-radius: 10rem;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0.2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button-ui {
+    display: block;
+    font: 900 1.7rem "museo-sans", "source-han-sans-simplified-c",
+        "Source Sans Pro", "noto-sans-cjk-jp", arial, helvetica, sans-serif;
+    line-height: normal;
+    letter-spacing: 0.2rem;
+    padding: 0 1rem 0 1.2rem;
+    position: relative;
+    width: fit-content;
+    height: auto;
+    min-width: auto;
+    min-height: auto;
+    padding: 1.3rem 2.2rem;
+    margin-left: 0;
+    background: black;
+    border-radius: 3rem;
+    font-weight: 900;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.button-ui:hover {
+    background: #76cdd8;
+    /* Change color on hover */
+    background-image: linear-gradient(to left,
+            rgb(184, 150, 255) 20%,
+            rgb(0, 246, 255) 90%,
+            rgb(0, 255, 240) 100%);
+}
+
+/************** BUTTONS **************/
+
+.site-footer {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.back-to-top {
+    display: block;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social-media {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    /* Add styling for icons */
+    position: relative;
+    font-size: 2rem;
+    /* Adjust the font size as needed */
+    color: rgb(0, 255, 240);
+    background-clip: text;
+    /* Clips the background to the text */
+    -webkit-background-clip: text;
+    /* For Webkit browsers like Chrome/Safari */
+}
+
+.social-icon:before {
+    background-image: linear-gradient(to left,
+            rgb(184, 150, 255) 20%,
+            rgb(0, 246, 255) 90%,
+            rgb(0, 255, 240) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Hides the original text color */
+    display: inline-block;
+    /* Allows the gradient to size correctly */
+}
+
+.social-icon:after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    background: url("path-to-your-icon.png") no-repeat center center;
+    background-size: contain;
+}
+
+/* Add a hover effect for the social icons */
+.social-icon:hover {
+    color: rgb(184, 150, 255);
+}
+
+/* For the copyright text */
+.copyrigh-text {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+/* Ensure that the social icons' font sizes match the mockup, assuming you're using text and not images */
+.social-icon {
+    font-size: 1.5em;
+    /* Adjust the size as needed */
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        flex-basis: 100%;
+        /* take full width on small screens */
+    }
+
+    .form-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .welcome-area-gradient-overlay h1 {
+        font-size: 46px;
+    }
+
+    .contact-area-gradient-overlay h1 {
+        font-size: 36px;
+    }
+
+    .services-area-gradient-overlay h1 {
+        font-size: 46px;
+    }
+
+    .about-area-gradient-overlay h1 {
+        font-size: 36px;
+    }
+
+    .museo-sans-500 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+}
